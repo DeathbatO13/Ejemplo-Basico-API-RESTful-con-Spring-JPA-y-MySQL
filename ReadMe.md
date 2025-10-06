@@ -21,7 +21,7 @@ Permite realizar operaciones básicas **CRUD (Create, Read, Update, Delete)** so
 
     src/
     ├── main/
-    │ ├── java/com/example/demo/
+    │ ├── java/com/deathbato/apirest_productos
     │ │ ├── controller/ProductoController.java
     │ │ ├── entity/Producto.java
     │ │ ├── repository/ProductoRepository.java
