@@ -1,4 +1,4 @@
-package com.deathbato.apirest_productos;
+package com.deathbato.apirest_productos.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
