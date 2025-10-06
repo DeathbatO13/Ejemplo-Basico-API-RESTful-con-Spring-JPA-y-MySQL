@@ -36,4 +36,11 @@ public class ProductoController {
     public void deleteById(@PathVariable("idProduct") Integer id){
         iProducto.deleteByID(id);
     }
+
+    //Peticion de tipo Put
+    @PutMapping
+    public Producto update(@RequestBody Producto producto){
+        return iProducto.update(producto);
+    }
+
 }

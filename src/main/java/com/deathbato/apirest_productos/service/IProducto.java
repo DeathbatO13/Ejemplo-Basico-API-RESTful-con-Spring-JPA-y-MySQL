@@ -8,4 +8,5 @@ public interface IProducto {
     List<Producto> findAll();
     Producto findById(Integer id);
     void deleteByID(Integer id);
+    Producto update(Producto producto);
 }

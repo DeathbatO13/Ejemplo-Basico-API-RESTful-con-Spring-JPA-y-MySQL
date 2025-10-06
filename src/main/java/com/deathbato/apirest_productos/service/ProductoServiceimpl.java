@@ -9,6 +9,15 @@ import java.util.List;
 @Service
 public class ProductoServiceimpl implements IProducto{
 
+    @Override
+    public Producto update(Producto producto) {
+        Producto producBd = productoRepository.findById(producto.getId()).get();
+        producBd.setNombre(producto.getNombre());
+        producBd.setDetalle(producto.getDetalle());
+        producBd.setPrecio(producto.getPrecio());
+        return productoRepository.save(producBd);
+    }
+
     private ProductoRepository productoRepository;
 
     public ProductoServiceimpl(ProductoRepository productoRepository) {
