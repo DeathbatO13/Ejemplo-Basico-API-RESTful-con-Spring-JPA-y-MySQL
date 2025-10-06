@@ -31,4 +31,9 @@ public class ProductoController {
     public Producto findById(@PathVariable Integer id){
         return iProducto.findById(id);
     }
+
+    @DeleteMapping("/{idProduct}")
+    public void deleteById(@PathVariable("idProduct") Integer id){
+        iProducto.deleteByID(id);
+    }
 }

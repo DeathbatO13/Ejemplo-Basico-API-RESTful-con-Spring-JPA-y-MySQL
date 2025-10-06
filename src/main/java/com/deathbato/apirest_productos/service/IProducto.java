@@ -7,4 +7,5 @@ public interface IProducto {
     Producto save(Producto producto);
     List<Producto> findAll();
     Producto findById(Integer id);
+    void deleteByID(Integer id);
 }
