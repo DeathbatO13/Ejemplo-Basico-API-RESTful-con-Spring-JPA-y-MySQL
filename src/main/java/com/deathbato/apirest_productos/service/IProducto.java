@@ -6,4 +6,5 @@ import java.util.List;
 public interface IProducto {
     Producto save(Producto producto);
     List<Producto> findAll();
+    Producto findById(Integer id);
 }

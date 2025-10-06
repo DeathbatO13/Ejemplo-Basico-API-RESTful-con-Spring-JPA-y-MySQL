@@ -24,4 +24,9 @@ public class ProductoServiceimpl implements IProducto{
     public List<Producto> findAll() {
         return productoRepository.findAll();
     }
+
+    @Override
+    public Producto findById(Integer id) {
+        return productoRepository.findById(id).get();
+    }
 }
